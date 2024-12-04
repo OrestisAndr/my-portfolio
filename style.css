@@ -1,0 +1,90 @@
+/* Ορίζουμε τις βασικές ρυθμίσεις για όλο το site */
+body {
+  background-color: black;
+  font-family: 'Helvetica Neue', sans-serif; /* Apple font */
+  color: white;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Εφέ κύλισης */
+}
+
+/* Στυλ για το header (μενού πλοήγησης) */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Μαύρο με διαφάνεια */
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header a:hover {
+  color: #007bff; /* Χρώμα όταν τοποθετείς τον δείκτη πάνω από το κουμπί */
+}
+
+/* Στυλ για το πρώτο τμήμα της σελίδας (Home) */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#home {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#about, #projects, #contact {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#about {
+  background-color: #222; /* Σκούρο φόντο */
+}
+
+#projects {
+  background-color: #333; /* Σκούρο φόντο */
+}
+
+#contact {
+  background-color: #444; /* Σκούρο φόντο */
+}
+
+/* Στυλ για τα κουμπιά */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Στυλ για το footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
