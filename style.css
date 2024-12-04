@@ -43,7 +43,7 @@ header a:hover {
 
 /* Εφαρμογή εφέ parallax */
 #home {
-  background-image: url('https://example.com/your-image.jpg'); /* Προσαρμόστε την εικόνα σας */
+ background-color: black; /* Μαύρο φόντο */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
