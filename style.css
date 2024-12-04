@@ -146,5 +146,8 @@ body {
   color: white; /* Χρώμα κειμένου */
 }
 
+html {
+  scroll-behavior: smooth;  /* Εφαρμόζει ομαλή κύλιση */
+}
 
 
