@@ -139,7 +139,7 @@ section.visible {
 }
 
 #home {
-  background-image: url(https://github.com/OrestisAndr/my-portfolio/blob/main/background.jpg?raw=true);  /* Αντικατέστησε με την πραγματική URL της εικόνας */
+  background-image: url('https://raw.githubusercontent.com/OrestisAndr/my-portfolio/main/background.jpg');  /* Σωστό URL για την εικόνα */
   background-size: cover;
   background-position: center;
   color: white;
@@ -147,3 +147,4 @@ section.visible {
   text-align: center;
   border-radius: 8px; /* Προαιρετικά, για στρογγυλεμένες γωνίες */
 }
+
