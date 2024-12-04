@@ -42,5 +42,12 @@
     <p>&copy; 2024 My Portfolio</p>
   </footer>
 <script src="script.js"></script>
+<script>
+  window.addEventListener('scroll', function () {
+    var scrollPosition = window.pageYOffset;
+    document.getElementById('home').style.backgroundPosition = 'center ' + (scrollPosition * 0.5) + 'px';  /* Μειώνει την ταχύτητα του φόντου κατά το scroll */
+  });
+</script>
+
 </body>
 </html>
