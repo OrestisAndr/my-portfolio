@@ -33,19 +33,13 @@ header a:hover {
 
 /* Στυλ για το πρώτο τμήμα της σελίδας (Home) */
 #home {
-  background-image: url('https://example.com/your-image.jpg'); /* Βάλτε τη σωστή URL της εικόνας */
-  background-attachment: fixed; /* Εφέ parallax */
-  background-size: cover;
-  background-position: center;
+  background-color: black; /* Μαύρο φόντο */
   height: 100vh;
   color: white;
   padding: 100px 20px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
 
 /* Εφαρμογή εφέ parallax */
 #home {
