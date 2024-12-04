@@ -28,8 +28,9 @@ header a {
 }
 
 header a:hover {
-  color: #007bff; /* Χρώμα όταν τοποθετείς τον δείκτη πάνω από το κουμπί */
+  filter: brightness(1.5); /* Κάνει το κείμενο πιο φωτεινό */
 }
+
 
 /* Στυλ για το πρώτο τμήμα της σελίδας (Home) */
 #home {
@@ -60,7 +61,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  filter: brightness(1.5); /* Κάνει το κουμπί πιο φωτεινό */
 }
 
 /* Εφέ κύλισης */
