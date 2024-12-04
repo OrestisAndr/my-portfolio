@@ -1,133 +1,119 @@
-/* Γενικά στυλ */
-html {
-  scroll-behavior: smooth; /* Ομαλή κύλιση */
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-}
-
+/* Ορίζουμε τις βασικές ρυθμίσεις για όλο το site */
 body {
+  background-color: black;
+  font-family: 'Helvetica Neue', sans-serif; /* Apple font */
+  color: white;
   margin: 0;
   padding: 0;
-  background-color: black; /* Μαύρο φόντο για όλη τη σελίδα */
-  color: white; /* Λευκό κείμενο για αντίθεση */
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  scroll-behavior: smooth; /* Εφέ κύλισης */
 }
 
-/* Στυλ για κάθε section */
-section {
+/* Στυλ για το header (μενού πλοήγησης) */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.7); /* Μαύρο με διαφάνεια */
+  z-index: 1000;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header a:hover {
+  color: #007bff; /* Χρώμα όταν τοποθετείς τον δείκτη πάνω από το κουμπί */
+}
+
+/* Στυλ για το πρώτο τμήμα της σελίδας (Home) */
+#home {
+  background-image: url('https://example.com/your-image.jpg'); /* Βάλτε τη σωστή URL της εικόνας */
+  background-attachment: fixed; /* Εφέ parallax */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Τα περιεχόμενα ξεκινούν από την κορυφή */
+  justify-content: center;
   align-items: center;
-  min-height: 100vh;
+}
+
+/* Εφαρμογή εφέ parallax */
+#home {
+  background-image: url('https://example.com/your-image.jpg'); /* Προσαρμόστε την εικόνα σας */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Στυλ για τις υπόλοιπες ενότητες (About, Projects, Contact) */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Στυλ για τα κουμπιά */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Εφέ κύλισης */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Στυλ για το footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
   padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Home Section */
-#home {
-  background-image: url('background.jpg'); /* Εικόνα φόντου για την αρχική σελίδα */
-  background-size: cover;
-  background-position: center;
-  background-color: black; /* Μαύρο φόντο για το home section */
-  background-attachment: fixed; /* Parallax effect */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Τα περιεχόμενα ξεκινούν από την κορυφή */
-  padding-top: 50px; /* Λίγο padding για να μην είναι το περιεχόμενο ακριβώς στην κορυφή */
+/* Στυλ για το scroll effect */
+#about, #projects, #contact {
+  padding: 100px 20px;
+  text-align: center;
 }
 
-#home a {
-  margin-top: 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-/* About Section */
 #about {
-  background-image: url('about-background.jpg'); /* Εικόνα φόντου για την ενότητα About */
-  background-size: cover;
-  background-position: center;
-  background-color: black; /* Μαύρο φόντο για το about section */
-  padding-top: 50px; /* Εξασφαλίζει ότι τα περιεχόμενα δεν είναι ακριβώς στην κορυφή */
+  background-color: #222; /* Σκούρο φόντο */
 }
 
-#about a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-/* Projects Section */
 #projects {
-  background-color: black; /* Μαύρο φόντο για το projects section */
-  padding-top: 50px;
+  background-color: #333; /* Σκούρο φόντο */
 }
 
-#projects a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-/* Contact Section */
 #contact {
-  background-color: black; /* Μαύρο φόντο για το contact section */
-  padding-top: 50px;
+  background-color: #444; /* Σκούρο φόντο */
 }
 
-#contact a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-/* Στυλ για τα links */
-a {
-  font-size: 20px;
-  margin-top: 20px;
-  display: inline-block;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-/* Εφέ hover για τα links */
-a:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-}
-
-/* Εφέ Parallax */
-#home {
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-/* Επιπλέον στυλ για ενότητες και άλλα στοιχεία */
-h1, h2, h3 {
-  font-size: 3rem;
-  margin: 10px 0;
-}
-
-p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Παράδειγμα για την προσθήκη animation ή εφέ */
-#home {
-  animation: fadeIn 2s ease-in-out; /* Εφέ fade-in για το home */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
     opacity: 1;
   }
 }
