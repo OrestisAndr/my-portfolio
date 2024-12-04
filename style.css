@@ -1,0 +1,87 @@
+/* Γενικά στυλ */
+html {
+  scroll-behavior: smooth; /* Ομαλή κύλιση */
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Στυλ για κάθε section */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Home Section */
+#home {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#home a {
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* About Section */
+#about {
+  background-image: url('about-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#about a {
+  color: white;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #333;
+}
+
+#projects a {
+  color: white;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #555;
+}
+
+#contact a {
+  color: white;
+}
+
+/* Εφέ parallax */
+#home {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Στυλ για τα links */
+a {
+  font-size: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+/* Ειδικά εφέ για το parallax */
+#home {
+  background-attachment: fixed;
+}
