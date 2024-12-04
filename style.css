@@ -44,7 +44,7 @@ header a:hover {
 
 /* Στυλ για τις υπόλοιπες ενότητες (About, Projects, Contact) */
 section {
-  background-color: black !important; /* Μαύρο φόντο για όλες τις ενότητες */
+  background-color: black; /* Μαύρο φόντο για όλες τις ενότητες */
   padding: 100px 20px;
   text-align: center;
 }
