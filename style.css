@@ -33,67 +33,18 @@ header a:hover {
 
 /* Στυλ για το πρώτο τμήμα της σελίδας (Home) */
 #home {
-  background-color: black !important; /* Μαύρο φόντο, χρησιμοποιώντας το !important για να παρακαμφθούν άλλοι κανόνες */
-  background-image: none !important; /* Καμία εικόνα φόντου */
+  background-color: black; /* Μαύρο φόντο */
   height: 100vh;
   color: white;
   padding: 100px 20px;
   text-align: center;
-}
-
-
-
-/* Εφαρμογή εφέ parallax */
-#home {
-  background-color: black; /* Μαύρο φόντο */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
 }
 
 /* Στυλ για τις υπόλοιπες ενότητες (About, Projects, Contact) */
 section {
-  padding: 100px 20px;
-  text-align: center;
-}
-
-/* Στυλ για τα κουμπιά */
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Εφέ κύλισης */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Στυλ για το footer */
-footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Στυλ για το scroll effect */
-#about, #projects, #contact {
   padding: 100px 20px;
   text-align: center;
 }
@@ -110,6 +61,38 @@ footer {
   background-color: #444; /* Σκούρο φόντο */
 }
 
-    opacity: 1;
-  }
+/* Στυλ για τα κουμπιά (τακτοποιημένα στην κορυφή της σελίδας) */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Απόσταση από την κορυφή της σελίδας */
+  position: absolute; /* Απόλυτη θέση για τα κουμπιά */
+  top: 40px; /* Ρυθμίζουμε την απόσταση από την κορυφή */
+  left: 50%;
+  transform: translateX(-50%); /* Κεντράρει το κουμπί */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Στυλ για το footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Εφέ κύλισης */
+html {
+  scroll-behavior: smooth;
 }
