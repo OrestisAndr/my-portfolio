@@ -7,6 +7,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: black; /* Μαύρο φόντο για όλη τη σελίδα */
+  color: white; /* Λευκό κείμενο για αντίθεση */
 }
 
 /* Στυλ για κάθε section */
@@ -23,10 +25,11 @@ section {
 
 /* Home Section */
 #home {
-  background-image: url('background.jpg');
+  background-image: url('background.jpg'); /* Εικόνα φόντου για την αρχική σελίδα */
   background-size: cover;
   background-position: center;
-  color: white;
+  background-color: black; /* Μαύρο φόντο για το home section */
+  background-attachment: fixed; /* Parallax effect */
 }
 
 #home a {
@@ -38,31 +41,38 @@ section {
 
 /* About Section */
 #about {
-  background-image: url('about-background.jpg');
+  background-image: url('about-background.jpg'); /* Εικόνα φόντου για την ενότητα About */
   background-size: cover;
   background-position: center;
+  background-color: black; /* Μαύρο φόντο για το about section */
 }
 
 #about a {
   color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 /* Projects Section */
 #projects {
-  background-color: #333;
+  background-color: black; /* Μαύρο φόντο για το projects section */
 }
 
 #projects a {
   color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 /* Contact Section */
 #contact {
-  background-color: #555;
+  background-color: black; /* Μαύρο φόντο για το contact section */
 }
 
 #contact a {
   color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 /* Εφέ parallax */
@@ -79,9 +89,37 @@ a {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-/* Ειδικά εφέ για το parallax */
+/* Εφέ hover για τα links */
+a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+/* Επιπλέον στυλ για ενότητες και άλλα στοιχεία */
+h1, h2, h3 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Παράδειγμα για την προσθήκη animation ή εφέ */
 #home {
-  background-attachment: fixed;
+  animation: fadeIn 2s ease-in-out; /* Εφέ fade-in για το home */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
