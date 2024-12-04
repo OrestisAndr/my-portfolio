@@ -33,7 +33,8 @@ header a:hover {
 
 /* Στυλ για το πρώτο τμήμα της σελίδας (Home) */
 #home {
-  background-color: black; /* Μαύρο φόντο */
+  background-color: black !important; /* Μαύρο φόντο, χρησιμοποιώντας το !important για να παρακαμφθούν άλλοι κανόνες */
+  background-image: none !important; /* Καμία εικόνα φόντου */
   height: 100vh;
   color: white;
   padding: 100px 20px;
@@ -41,9 +42,10 @@ header a:hover {
 }
 
 
+
 /* Εφαρμογή εφέ parallax */
 #home {
- background-color: black; /* Μαύρο φόντο */
+  background-color: black; /* Μαύρο φόντο */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
